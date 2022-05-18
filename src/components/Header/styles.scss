@@ -1,0 +1,68 @@
+@import '../../styles/index.scss';
+
+.header{
+    background-color: $color-background-light;
+    height: 70px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 30px;
+    .search__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+        width: 400px;
+        padding: 0 10px;
+        background-color: #40475a;
+        border-radius: 30px;
+        .search__input{
+            outline: none;
+            background-color: #40475a;
+            border: none;
+            padding: 0 10px;
+            color: $color-text-dark;
+            width: 100%;
+            font-size: 13px
+        }
+        .search__input::placeholder{
+            color: $color-text-dark;
+            font-size: 13px;
+        }
+        .icon__btn{
+            cursor: pointer;
+        }
+    }
+    .user__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 280px;
+        .icon__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 120px;
+            .flag{
+                width: 28px;
+                height: 19.5px;
+            }
+        }
+        .user__info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            .user__avatar{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}

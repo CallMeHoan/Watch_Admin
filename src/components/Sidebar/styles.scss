@@ -1,0 +1,39 @@
+@import '../../styles/index.scss';
+
+.sidebar{
+    width: 20vw;
+    background-color: $color-background-semi;
+    height: 100vh;
+    .logo_container{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        .logo{
+            width: 85px;
+            height: 22px;
+        }
+    }
+    .menu{
+        
+        .block{
+            padding: 5px 20px;
+            .title{
+                font-size: 13px;
+            }
+        }
+        .menu__container{
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            .menu__title{
+                margin-left: 15px;
+            }
+        }
+        .menu__container:hover {
+            background-color: $color-background;
+        }
+    }
+}
