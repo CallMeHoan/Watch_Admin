@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.scss'
+import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
 import GridViewIcon from '@mui/icons-material/GridView'
 import PersonIcon from '@mui/icons-material/Person'
@@ -16,20 +17,24 @@ export const Sidebar = () => {
 				<div className='block'>
 					<span className='title'>NAVIGATION</span>
 				</div>
+				<Link className='link' to='/'>
+					<div className='menu__container'>
+						<GridViewIcon className='icons' />
+						<span className='menu__title'>Dashboard</span>
+					</div>
+				</Link>
+				<Link className='link' to='/profile'>
+					<div className='menu__container'>
+						<PersonIcon className='icons' />
+						<span className='menu__title'>Profile</span>
+					</div>
+				</Link>
 				<div className='menu__container'>
-					<GridViewIcon />
-					<span className='menu__title'>Dashboard</span>
-				</div>
-				<div className='menu__container'>
-					<PersonIcon />
-					<span className='menu__title'>Profile</span>
-				</div>
-				<div className='menu__container'>
-					<Inventory2Icon />
+					<Inventory2Icon className='icons' />
 					<span className='menu__title'>Products</span>
 				</div>
 				<div className='menu__container'>
-					<GroupIcon />
+					<GroupIcon className='icons' />
 					<span className='menu__title'>Users</span>
 				</div>
 			</div>

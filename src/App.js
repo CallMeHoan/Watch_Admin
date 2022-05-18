@@ -2,7 +2,11 @@ import React from 'react'
 import { ToastContainer } from 'react-toastify'
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
-import { Header, Sidebar } from './components'
+import { Header, Sidebar, Sitemap } from './components'
+
+const Dashboard = lazy(() => import('./pages/Dashboard'))
+const Profile = lazy(() => import('./pages/Profile'))
+
 function App() {
 	return (
 		<div className='App'>
@@ -12,7 +16,10 @@ function App() {
 						<Sidebar />
 						<div className='content'>
 							<Header />
-							<h1>Hello</h1>
+							<Switch>
+								<Route path='/' component={Dashboard} exact />
+								<Route path='/profile' component={Profile} exact />
+							</Switch>
 						</div>
 					</div>
 					<ToastContainer

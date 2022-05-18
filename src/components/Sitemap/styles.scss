@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+.sitemap{
+    background-color: $color-background-semi-dark;
+    width: 80vw;
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .title{
+        font-weight: 600;
+        color: white;
+        font-size: 18px;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 11%;
+        font-size: 15px;
+        .uplon{
+            color: white;
+        }
+    }
+}

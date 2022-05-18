@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+.dashboard{
+    width: 80vw;
+    padding: 0 30px;
+    .dashboard__container{
+        .dashboard__card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

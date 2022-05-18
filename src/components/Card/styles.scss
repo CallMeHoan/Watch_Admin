@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.card{
+    background-color: $color-background-semi;
+    padding: 20px;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    .criteria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        .icon__image{
+            height:30px;
+            width: 30px;
+        }
+    }
+    .value{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .period{
+        font-size: 14px;
+    }
+}

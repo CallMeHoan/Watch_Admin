@@ -2,7 +2,7 @@
 
 .sidebar{
     width: 20vw;
-    background-color: $color-background-semi;
+    background-color: $color-background-light;
     height: 100vh;
     .logo_container{
         display: flex;
@@ -30,6 +30,10 @@
             cursor: pointer;
             .menu__title{
                 margin-left: 15px;
+                color:$color-text;
+            }
+            .icons {
+                color: $color-text;
             }
         }
         .menu__container:hover {
