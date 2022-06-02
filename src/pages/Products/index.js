@@ -53,9 +53,11 @@ const Products = () => {
 			<div className='product__container'>
 				<div className='btn-group'>
 					<span className='title'>Products</span>
-					<Button variant='contained' startIcon={<AddIcon />}>
-						Add
-					</Button>
+					<Link to='/add-product' className='link'>
+						<Button variant='contained' startIcon={<AddIcon />}>
+							Add
+						</Button>
+					</Link>
 				</div>
 				<div className='table'>
 					<TableContainer component={Paper}>

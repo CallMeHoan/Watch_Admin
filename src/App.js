@@ -11,6 +11,7 @@ const SignUp = lazy(() => import('./pages/SignUp'))
 const Products = lazy(() => import('./pages/Products'))
 const Users = lazy(() => import('./pages/Users'))
 const EditProduct = lazy(() => import('./pages/EditProduct'))
+const AddProduct = lazy(() => import('./pages/AddProduct'))
 
 const user = [{ name: null }]
 
@@ -30,6 +31,7 @@ function App() {
 									<Route path='/products' component={Products} exact />
 									<Route path='/users' component={Users} exact />
 									<Route path='/edit-product' component={EditProduct} exact />
+									<Route path='/add-product' component={AddProduct} exact />
 								</Switch>
 							</div>
 						</div>
