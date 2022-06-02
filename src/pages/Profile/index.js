@@ -2,6 +2,8 @@ import React from 'react'
 import { Sitemap } from '../../components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import StarIcon from '@mui/icons-material/Star'
+import SaveIcon from '@mui/icons-material/Save'
+import Button from '@mui/material/Button'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
@@ -85,7 +87,7 @@ const Profile = () => {
 						<TabPanel>
 							<div className='tab-container'>
 								<span className='category'>PERSONAL INFORMATION</span>
-								<div className='container'>
+								<div className='container group'>
 									<div className='left'>
 										<div className='cate-info'>
 											<span className='cate-title'>Full Name:</span>
@@ -129,7 +131,78 @@ const Profile = () => {
 							</div>
 						</TabPanel>
 						<TabPanel>
-							<div className='tab-container'></div>
+							<div className='tab-container'>
+								<span className='category'>PERSONAL INFORMATION</span>
+								<div className='form-container'>
+									<span className='cate-title'>NAME</span>
+									<div className='form'>
+										<div className='title'>User Name</div>
+										<input type='text' className='input' placeholder='Thien Hoan'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>First Name</div>
+										<input type='text' className='input' placeholder='Thien'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Last Name</div>
+										<input type='text' className='input' placeholder='Hoan'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Designation</div>
+										<input type='text' className='input' placeholder='Admin'></input>
+									</div>
+									<span className='cate-title'>CONTACT INFORMATION</span>
+									<div className='form'>
+										<div className='title'>Email</div>
+										<input
+											type='text'
+											className='input'
+											placeholder='nguyenthienhoangeatam@gmail.com'
+										></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Phone number</div>
+										<input type='text' className='input' placeholder='(+84) 79 467 6336'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Address</div>
+										<input type='text' className='input' placeholder='Ho Chi Minh city'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Website</div>
+										<input type='text' className='input' placeholder='blaa.example.com'></input>
+									</div>
+									<span className='cate-title'>SOCIAL INFO</span>
+									<div className='form'>
+										<div className='title'>Facebook</div>
+										<input type='text' className='input' placeholder='facebook.com'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Twitter</div>
+										<input type='text' className='input' placeholder='twitter.com'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Instagram</div>
+										<input type='text' className='input' placeholder='instagram.com'></input>
+									</div>
+									<div className='form'>
+										<div className='title'>Youtube</div>
+										<input type='text' className='input' placeholder='youtube.com'></input>
+									</div>
+									<span className='cate-title'>ABOUT YOURSELF</span>
+									<div className='form'>
+										<div className='title'>Biographical Info</div>
+										<textarea
+											type='text'
+											className='input area'
+											placeholder='nguyenthienhoangeatam@gmail.com'
+										></textarea>
+									</div>
+									<Button className='btn' variant='contained' startIcon={<SaveIcon />}>
+										Save Changes
+									</Button>
+								</div>
+							</div>
 						</TabPanel>
 					</Tabs>
 				</div>

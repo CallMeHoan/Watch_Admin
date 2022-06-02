@@ -6,6 +6,7 @@ import GridViewIcon from '@mui/icons-material/GridView'
 import PersonIcon from '@mui/icons-material/Person'
 import Inventory2Icon from '@mui/icons-material/Inventory2'
 import GroupIcon from '@mui/icons-material/Group'
+import PaidIcon from '@mui/icons-material/Paid'
 
 export const Sidebar = () => {
 	return (
@@ -39,6 +40,12 @@ export const Sidebar = () => {
 					<div className='menu__container'>
 						<GroupIcon className='icons' />
 						<span className='menu__title'>Users</span>
+					</div>
+				</Link>
+				<Link className='link' to='/transactions'>
+					<div className='menu__container'>
+						<PaidIcon className='icons' />
+						<span className='menu__title'>Transactions</span>
 					</div>
 				</Link>
 			</div>

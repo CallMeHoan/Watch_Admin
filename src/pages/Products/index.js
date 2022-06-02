@@ -1,5 +1,6 @@
 import React from 'react'
 import { Sitemap } from '../../components'
+import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -85,9 +86,11 @@ const Products = () => {
 										<TableCell align='left'>{value.type}</TableCell>
 										<TableCell align='left'>
 											<Stack direction='row' spacing={1}>
-												<Button variant='contained' startIcon={<EditIcon />}>
-													Edit
-												</Button>
+												<Link to='/edit-product' className='link'>
+													<Button variant='contained' startIcon={<EditIcon />}>
+														Edit
+													</Button>
+												</Link>
 												<Button variant='contained' startIcon={<DeleteIcon />}>
 													Delete
 												</Button>
