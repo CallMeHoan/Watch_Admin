@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify'
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import { Header, Sidebar } from './components'
+import { Edit } from '@mui/icons-material'
 
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const Profile = lazy(() => import('./pages/Profile'))
@@ -12,6 +13,7 @@ const Products = lazy(() => import('./pages/Products'))
 const Users = lazy(() => import('./pages/Users'))
 const EditProduct = lazy(() => import('./pages/EditProduct'))
 const AddProduct = lazy(() => import('./pages/AddProduct'))
+const EditUser = lazy(() => import('./pages/EditUser'))
 
 const user = [{ name: null }]
 
@@ -32,6 +34,7 @@ function App() {
 									<Route path='/users' component={Users} exact />
 									<Route path='/edit-product' component={EditProduct} exact />
 									<Route path='/add-product' component={AddProduct} exact />
+									<Route path='/edit-user' component={EditUser} exact />
 								</Switch>
 							</div>
 						</div>
