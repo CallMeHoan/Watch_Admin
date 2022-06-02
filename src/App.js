@@ -8,6 +8,8 @@ const Dashboard = lazy(() => import('./pages/Dashboard'))
 const Profile = lazy(() => import('./pages/Profile'))
 const SignIn = lazy(() => import('./pages/SignIn'))
 const SignUp = lazy(() => import('./pages/SignUp'))
+const Products = lazy(() => import('./pages/Products'))
+const Users = lazy(() => import('./pages/Users'))
 
 const user = [{ name: null }]
 
@@ -24,10 +26,11 @@ function App() {
 								<Switch>
 									<Route path='/' component={Dashboard} exact />
 									<Route path='/profile' component={Profile} exact />
+									<Route path='/products' component={Products} exact />
+									<Route path='/users' component={Users} exact />
 								</Switch>
 							</div>
 						</div>
-						<Route path='/signin' component={SignIn} exact />
 						<ToastContainer
 							position='bottom-right'
 							autoClose={5000}

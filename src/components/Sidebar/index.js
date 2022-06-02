@@ -29,14 +29,18 @@ export const Sidebar = () => {
 						<span className='menu__title'>Profile</span>
 					</div>
 				</Link>
-				<div className='menu__container'>
-					<Inventory2Icon className='icons' />
-					<span className='menu__title'>Products</span>
-				</div>
-				<div className='menu__container'>
-					<GroupIcon className='icons' />
-					<span className='menu__title'>Users</span>
-				</div>
+				<Link className='link' to='/products'>
+					<div className='menu__container'>
+						<Inventory2Icon className='icons' />
+						<span className='menu__title'>Products</span>
+					</div>
+				</Link>
+				<Link className='link' to='/users'>
+					<div className='menu__container'>
+						<GroupIcon className='icons' />
+						<span className='menu__title'>Users</span>
+					</div>
+				</Link>
 			</div>
 		</div>
 	)

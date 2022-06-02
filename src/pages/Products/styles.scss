@@ -1,0 +1,30 @@
+@import '../../styles/index.scss';
+
+.product__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    .btn-group{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .cell{
+        width: 30%;
+        .img{
+            width: 20%;
+            height: 20%;
+        }
+    }
+    
+}
